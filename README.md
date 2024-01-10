@@ -1,12 +1,38 @@
-# Starter Next/Hardhat Project
+# 2nd Module project For Avalanche 
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+This is a Solidity smart contract for managing an account with deposit ,burn and withdrawal functionality.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Description
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+The Assessment smart contract allows for basic account management, enabling deposits, burn and withdrawals. It logs transactions and provides an overview of the transaction history.
+
+
+## Requirements 
+. Etherium development environment
+.Visual Studio 
+. Node Js
+
+
+
+## Functions of code 
+
+'constructor(uint256 initBalance) payable'
+Initializes the contract with an initial balance.
+
+'getBalance() public view returns (uint256)'
+Retrieves the current balance of the account.
+
+'deposit(uint256 _amount) public payable'
+Allows the owner to deposit funds into the account.
+
+'withdraw(uint256 _withdrawAmount) public'
+Allows the owner to withdraw funds from the account.
+
+'getTransactionHistory() public view returns (Transaction[] memory)'
+Retrieves the transaction history.
+
+'addressToString(address _addr) internal pure returns (string memory)'
+Utility function to convert an address to a string.
+
+## Author 
+Hritik Mune
